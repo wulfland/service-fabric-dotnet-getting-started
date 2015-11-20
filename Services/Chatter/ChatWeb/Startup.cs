@@ -7,8 +7,7 @@ namespace ChatWeb
 {
     using ChatWeb.Models;
     using Microsoft.AspNet.Builder;
-    using Microsoft.AspNet.Hosting;    
-    using ChatWeb.Domain;
+    using Microsoft.AspNet.Hosting;
     using Microsoft.Extensions.DependencyInjection;
 
     public class Startup
@@ -34,13 +33,7 @@ namespace ChatWeb
             app.UseStaticFiles();
 
             // Add MVC to the request pipeline.
-            app.UseMvc(
-                routes =>
-                {
-                    routes.MapRoute(
-                        name: "default",
-                        template: "{controller=Chatter}/{action=Index}/{id?}");
-                });
+            app.UseMvc();
         }
     }
 }

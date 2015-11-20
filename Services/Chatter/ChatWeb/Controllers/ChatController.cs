@@ -13,7 +13,7 @@ namespace ChatWeb.Controllers
     using Microsoft.AspNet.Mvc;
 
     // This controller accepts WebApi calls from the index.html when the AJAX calls are made
-    [Route("api/[controller]")]
+    [Route("chatter/api/[controller]")]
     public class ChatController : Controller
     {
         [FromServices]

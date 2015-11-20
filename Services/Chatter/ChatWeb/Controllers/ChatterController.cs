@@ -8,6 +8,7 @@ namespace ChatWeb.Controllers
     using Microsoft.AspNet.Mvc;
 
     // This controller loads the single index.html page
+    [Route("chatter")]
     public class ChatterController : Controller
     {
         // GET: /<controller>/
